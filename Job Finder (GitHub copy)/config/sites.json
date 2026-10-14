@@ -1,0 +1,40 @@
+{
+  "how_to_edit": "Add or remove website names and addresses below, then save. Changes apply on your next Search. Jobs are only shown if they can be applied to on a company's own career page, a company hiring system, or a trusted job board.",
+
+  "trusted_job_boards": {
+    "LinkedIn": ["linkedin.com"],
+    "Indeed": ["indeed.com"],
+    "Glassdoor": ["glassdoor.com"],
+    "ZipRecruiter": ["ziprecruiter.com"],
+    "Dice": ["dice.com"],
+    "Monster": ["monster.com"],
+    "Built In": ["builtin.com"],
+    "SimplyHired": ["simplyhired.com"],
+    "CareerBuilder": ["careerbuilder.com"],
+    "Wellfound": ["wellfound.com"],
+    "USAJobs": ["usajobs.gov"]
+  },
+
+  "company_hiring_systems": {
+    "Workday": ["myworkdayjobs.com", "myworkdaysite.com", "workday.com"],
+    "Greenhouse": ["greenhouse.io"],
+    "Lever": ["lever.co"],
+    "iCIMS": ["icims.com"],
+    "SmartRecruiters": ["smartrecruiters.com"],
+    "Taleo": ["taleo.net"],
+    "Oracle Cloud": ["oraclecloud.com"],
+    "ADP": ["adp.com"],
+    "UKG": ["ultipro.com", "ukg.com", "ukg.net"],
+    "Paylocity": ["paylocity.com"],
+    "BambooHR": ["bamboohr.com"],
+    "Jobvite": ["jobvite.com"]
+  },
+
+  "blocked_sites": {
+    "FlexJobs": {"domains": ["flexjobs.com"], "reason": "charges job seekers a subscription"},
+    "Virtual Vocations": {"domains": ["virtualvocations.com"], "reason": "charges job seekers a subscription"},
+    "Ladders": {"domains": ["theladders.com"], "reason": "charges job seekers for premium access"}
+  },
+
+  "blocked_companies": []
+}

@@ -1,0 +1,559 @@
+{
+  "name": "Chase",
+  "home": "Hickory, NC",
+  "summary": "EDI Coordinator at a logistics company (~5 years). Managed 100+ EDI trading partner integrations and led a migration from Dell Boomi to Cleo Integration Cloud. B.S. Computer Information Systems (cybersecurity concentration), Microsoft 365 Fundamentals. Open to entry-level IT / information systems and entry-level cybersecurity roles as well as EDI and integration roles.",
+  "years_experience": 5,
+  "skills": {
+    "EDI": {
+      "weight": 3,
+      "aliases": [
+        "edi",
+        "electronic data interchange"
+      ]
+    },
+    "X12": {
+      "weight": 3,
+      "aliases": [
+        "x12",
+        "ansi x12",
+        "edifact",
+        "204/210/214"
+      ]
+    },
+    "Cleo": {
+      "weight": 3,
+      "aliases": [
+        "cleo",
+        "cleo integration cloud",
+        "cleo studio",
+        "cleo harmony"
+      ]
+    },
+    "Dell Boomi": {
+      "weight": 3,
+      "aliases": [
+        "boomi",
+        "dell boomi"
+      ]
+    },
+    "BizTalk": {
+      "weight": 2,
+      "aliases": [
+        "biztalk"
+      ]
+    },
+    "iPaaS": {
+      "weight": 2,
+      "aliases": [
+        "ipaas",
+        "integration platform"
+      ]
+    },
+    "Trading partner onboarding": {
+      "weight": 2,
+      "aliases": [
+        "trading partner",
+        "partner onboarding",
+        "b2b integration",
+        "b2b"
+      ]
+    },
+    "AS2": {
+      "weight": 2,
+      "aliases": [
+        "as2"
+      ]
+    },
+    "SFTP": {
+      "weight": 2,
+      "aliases": [
+        "sftp",
+        "ftp",
+        "ftps",
+        "managed file transfer",
+        "mft"
+      ]
+    },
+    "SQL": {
+      "weight": 2,
+      "aliases": [
+        "sql",
+        "t-sql",
+        "tsql"
+      ]
+    },
+    "SQL Server": {
+      "weight": 2,
+      "aliases": [
+        "sql server",
+        "mssql",
+        "ssms"
+      ]
+    },
+    "Python": {
+      "weight": 2,
+      "aliases": [
+        "python"
+      ]
+    },
+    "PowerShell": {
+      "weight": 2,
+      "aliases": [
+        "powershell"
+      ]
+    },
+    "REST APIs": {
+      "weight": 2,
+      "aliases": [
+        "rest api",
+        "rest apis",
+        "restful",
+        "rest/soap"
+      ]
+    },
+    "SOAP": {
+      "weight": 1,
+      "aliases": [
+        "soap"
+      ]
+    },
+    "APIs": {
+      "weight": 1,
+      "aliases": [
+        "api",
+        "apis",
+        "web services"
+      ]
+    },
+    "Postman": {
+      "weight": 1,
+      "aliases": [
+        "postman"
+      ]
+    },
+    "JSON": {
+      "weight": 1,
+      "aliases": [
+        "json"
+      ]
+    },
+    "XML": {
+      "weight": 1,
+      "aliases": [
+        "xml",
+        "xslt",
+        "xsd"
+      ]
+    },
+    "CSV / flat files": {
+      "weight": 1,
+      "aliases": [
+        "csv",
+        "flat file",
+        "flat files"
+      ]
+    },
+    "Data mapping": {
+      "weight": 2,
+      "aliases": [
+        "data mapping",
+        "mapping",
+        "data transformation"
+      ]
+    },
+    "Logistics / supply chain": {
+      "weight": 2,
+      "aliases": [
+        "logistics",
+        "supply chain",
+        "transportation",
+        "tms",
+        "wms",
+        "3pl",
+        "freight",
+        "warehouse"
+      ]
+    },
+    "Troubleshooting": {
+      "weight": 1,
+      "aliases": [
+        "problem solving",
+        "problem-solving",
+        "root cause",
+        "technical support",
+        "troubleshoot",
+        "troubleshooting"
+      ]
+    },
+    "Cybersecurity": {
+      "weight": 2,
+      "aliases": [
+        "cyber",
+        "cyber security",
+        "cybersecurity",
+        "information assurance",
+        "information security",
+        "infosec",
+        "security analyst",
+        "security awareness",
+        "security fundamentals",
+        "security monitoring",
+        "security operations",
+        "soc"
+      ]
+    },
+    "Microsoft 365": {
+      "weight": 1,
+      "aliases": [
+        "excel",
+        "m365",
+        "microsoft 365",
+        "microsoft office",
+        "ms office",
+        "o365",
+        "office 365",
+        "sharepoint",
+        "teams"
+      ]
+    },
+    "Windows": {
+      "weight": 1,
+      "aliases": [
+        "windows server",
+        "windows"
+      ]
+    },
+    "Networking basics": {
+      "weight": 1,
+      "aliases": [
+        "tcp/ip",
+        "networking",
+        "firewall",
+        "dns",
+        "vpn"
+      ]
+    },
+    "CIS degree": {
+      "weight": 2,
+      "aliases": [
+        "computer information systems",
+        "management information systems",
+        "information systems",
+        "information technology degree",
+        "degree in information technology",
+        "computer science or related",
+        "cis degree",
+        "mis degree",
+        "bachelor's degree in it",
+        "bachelor's in it"
+      ]
+    }
+  },
+  "gaps": {
+    "Power BI": [
+      "power bi",
+      "powerbi"
+    ],
+    "C# / .NET": [
+      "c#",
+      ".net",
+      "dotnet",
+      "asp.net"
+    ],
+    "Azure (advanced)": [
+      "azure",
+      "logic apps",
+      "azure functions",
+      "azure data factory"
+    ],
+    "Java": [
+      "java",
+      "spring boot"
+    ],
+    "MuleSoft": [
+      "mulesoft",
+      "anypoint"
+    ],
+    "SAP": [
+      "sap"
+    ],
+    "Salesforce": [
+      "salesforce"
+    ],
+    "AWS": [
+      "aws",
+      "amazon web services"
+    ],
+    "Kubernetes / Docker": [
+      "kubernetes",
+      "docker",
+      "containers"
+    ],
+    "Splunk / SIEM": [
+      "splunk",
+      "siem",
+      "sentinel",
+      "qradar"
+    ],
+    "Security+ / CySA+": [
+      "security+",
+      "comptia security",
+      "cysa+"
+    ],
+    "CISSP / CISM": [
+      "cissp",
+      "cism",
+      "cisa"
+    ],
+    "NIST / ISO 27001": [
+      "nist",
+      "iso 27001",
+      "soc 2",
+      "soc2"
+    ],
+    "Incident response": [
+      "incident response",
+      "edr",
+      "crowdstrike"
+    ],
+    "JavaScript / TypeScript": [
+      "javascript",
+      "typescript",
+      "node.js",
+      "nodejs"
+    ],
+    "Go / Golang": [
+      "golang"
+    ],
+    "Snowflake / data warehouse": [
+      "snowflake",
+      "databricks",
+      "data warehouse"
+    ],
+    "Terraform": [
+      "terraform"
+    ],
+    "Kafka / messaging": [
+      "kafka",
+      "rabbitmq",
+      "message queue"
+    ],
+    "Linux": [
+      "linux",
+      "bash"
+    ],
+    "ERP (Oracle / NetSuite / D365)": [
+      "netsuite",
+      "oracle ebs",
+      "oracle erp",
+      "dynamics 365",
+      "d365"
+    ]
+  },
+  "title_keywords": {
+    "strong": [
+      "edi",
+      "b2b",
+      "boomi",
+      "cleo",
+      "ipaas",
+      "integration",
+      "interface",
+      "biztalk",
+      "data exchange",
+      "mft",
+      "file transfer"
+    ],
+    "medium": [
+      "access management",
+      "api",
+      "application analyst",
+      "application support",
+      "applications analyst",
+      "business analyst",
+      "business systems analyst",
+      "compliance analyst",
+      "cyber security",
+      "cyber security analyst",
+      "cybersecurity",
+      "cybersecurity analyst",
+      "data analyst",
+      "database analyst",
+      "desktop support",
+      "governance",
+      "grc",
+      "help desk",
+      "helpdesk",
+      "iam",
+      "identity and access",
+      "implementation",
+      "implementation specialist",
+      "incident response",
+      "information security",
+      "information security analyst",
+      "information systems",
+      "infosec",
+      "it analyst",
+      "it associate",
+      "it coordinator",
+      "it specialist",
+      "it support",
+      "it technician",
+      "middleware",
+      "network administrator",
+      "risk analyst",
+      "security administrator",
+      "security analyst",
+      "security associate",
+      "security operations",
+      "security specialist",
+      "service desk",
+      "soc",
+      "soc analyst",
+      "support analyst",
+      "system administrator",
+      "system analyst",
+      "system engineer",
+      "systems administrator",
+      "systems analyst",
+      "systems engineer",
+      "technical analyst",
+      "technical support",
+      "technology analyst",
+      "threat",
+      "vulnerability"
+    ],
+    "weak": [
+      "analyst",
+      "engineer",
+      "developer",
+      "security",
+      "cyber",
+      "specialist",
+      "consultant",
+      "administrator"
+    ]
+  },
+  "exclude_title_keywords": [
+    "director",
+    "vice president",
+    "vp ",
+    "vp,",
+    "head of",
+    "chief",
+    "intern",
+    "internship",
+    "sales",
+    "account executive",
+    "recruiter",
+    "marketing",
+    "nurse",
+    "driver",
+    "mechanic",
+    "technician ii - field"
+  ],
+  "search_queries": [
+    "EDI analyst",
+    "EDI developer",
+    "integration analyst",
+    "integration engineer",
+    "Boomi developer",
+    "entry level IT analyst",
+    "junior systems analyst",
+    "help desk analyst",
+    "entry level cybersecurity analyst",
+    "SOC analyst",
+    "security analyst",
+    "GRC analyst"
+  ],
+  "jsearch_queries": [
+    "EDI analyst",
+    "integration analyst",
+    "entry level IT analyst",
+    "entry level cybersecurity analyst",
+    "junior systems analyst"
+  ],
+  "nearby_places": [
+    "Hickory, NC",
+    "Conover, NC",
+    "Newton, NC",
+    "Claremont, NC",
+    "Catawba, NC",
+    "Maiden, NC",
+    "Long View, NC",
+    "Granite Falls, NC",
+    "Valdese, NC",
+    "Morganton, NC",
+    "Lenoir, NC",
+    "Taylorsville, NC",
+    "Statesville, NC",
+    "Troutman, NC",
+    "Mooresville, NC",
+    "Denver, NC",
+    "Lincolnton, NC",
+    "Cherryville, NC",
+    "Shelby, NC",
+    "Kings Mountain, NC",
+    "Gastonia, NC",
+    "Belmont, NC",
+    "Mount Holly, NC",
+    "Cornelius, NC",
+    "Davidson, NC",
+    "Huntersville, NC",
+    "Charlotte, NC",
+    "Matthews, NC",
+    "Mint Hill, NC",
+    "Pineville, NC",
+    "Concord, NC",
+    "Kannapolis, NC",
+    "Harrisburg, NC",
+    "Salisbury, NC",
+    "Marion, NC",
+    "Wilkesboro, NC",
+    "North Wilkesboro, NC",
+    "Boone, NC",
+    "Mocksville, NC",
+    "Fort Mill, SC",
+    "Rock Hill, SC",
+    "Indian Trail, NC",
+    "Monroe, NC"
+  ],
+  "categories": {
+    "Integration & EDI": [
+      "edi",
+      "b2b",
+      "boomi",
+      "cleo",
+      "ipaas",
+      "integration",
+      "interface",
+      "biztalk",
+      "data exchange",
+      "mft",
+      "file transfer",
+      "middleware",
+      "api"
+    ],
+    "Cybersecurity": [
+      "access management",
+      "compliance",
+      "cyber",
+      "cyber security",
+      "cybersecurity",
+      "detection",
+      "grc",
+      "iam",
+      "identity and access",
+      "incident response",
+      "information security",
+      "infosec",
+      "risk analyst",
+      "security",
+      "siem",
+      "soc",
+      "threat",
+      "vulnerability"
+    ],
+    "IT & Systems": []
+  }
+}

@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>Job Finder</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%234FA3E0'/%3E%3Ccircle cx='14' cy='14' r='6' stroke='white' stroke-width='3' fill='none'/%3E%3Cpath d='M19 19l5 5' stroke='white' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <!-- Top bar: always visible -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#" data-goto="jobs"><span class="logo"></span><span class="brand-name">Job Finder</span></a>
+      <nav class="tabs" role="tablist">
+        <button class="tab active" data-goto="jobs" role="tab">Jobs <span class="count" id="jobsCount"></span></button>
+        <button class="tab" data-goto="mine" role="tab">My jobs <span class="count" id="mineCount"></span></button>
+      </nav>
+      <div class="menu-wrap">
+        <button id="menuBtn" class="icon-btn" aria-haspopup="true" aria-expanded="false" aria-label="Menu">
+          <svg viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+          <span class="menu-label">Menu</span>
+        </button>
+        <div id="menu" class="menu" hidden role="menu">
+          <button role="menuitem" data-action="settings"><span>🔑</span>JSearch key</button>
+          <button role="menuitem" data-action="companies"><span>🏢</span>Companies I check</button>
+          <button role="menuitem" data-action="notes"><span>📝</span>Daily review notes</button>
+          <hr>
+          <button role="menuitem" data-action="close" class="danger"><span>⏻</span>Close Job Finder</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- JOBS -->
+    <section id="jobs" class="view">
+      <div class="hero">
+        <h1 id="greeting">Hello</h1>
+        <p id="subline" class="subline">&nbsp;</p>
+        <button id="searchBtn" class="search-btn">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="M15.5 15.5 21 21"/></svg>
+          <span>Search</span>
+        </button>
+        <div id="statusLine" class="status-line"></div>
+      </div>
+
+      <div id="loading" class="loading" hidden>
+        <div class="radar"><span></span><span></span><span></span></div>
+        <p id="loadingText">Checking job boards…</p>
+      </div>
+
+      <div id="toolbar" class="toolbar" hidden>
+        <div class="groups" id="groups" role="tablist" aria-label="Job type"></div>
+        <div class="filters" id="filters" aria-label="Filters">
+          <button class="chip-toggle" data-filter="new">New</button>
+          <button class="chip-toggle" data-filter="entry">Entry level</button>
+          <button class="chip-toggle" data-filter="remote">Remote</button>
+          <button class="chip-toggle" data-filter="local">Near me</button>
+        </div>
+      </div>
+      <p id="resultsSummary" class="results-summary" hidden></p>
+      <div id="results" class="cards"></div>
+      <div id="empty" class="empty" hidden></div>
+    </section>
+
+    <!-- MY JOBS -->
+    <section id="mine" class="view" hidden>
+      <div class="page-head">
+        <h2>My jobs</h2>
+        <p class="subline">Everything you've saved or applied to.</p>
+      </div>
+      <div class="toolbar static">
+        <div class="groups" id="mineGroups" role="tablist" aria-label="Show"></div>
+      </div>
+      <div id="mineList" class="cards"></div>
+      <div id="mineEmpty" class="empty" hidden>Nothing here yet. Tap <b>Save</b> or <b>Applied</b> on any job and it'll show up here.</div>
+    </section>
+  </main>
+
+  <!-- Settings (JSearch key) -->
+  <dialog id="settingsDialog">
+    <form method="dialog" class="dialog-close"><button aria-label="Close">×</button></form>
+    <h3>🔑 JSearch key</h3>
+    <p class="subline">Your JSearch key lets Job Finder pull jobs from LinkedIn, Indeed, Glassdoor, ZipRecruiter and more.</p>
+    <div id="keySaved" class="key-saved" hidden>
+      <div><b>Key saved ✓</b><span id="keyLast4" class="key-last4"></span></div>
+      <button type="button" id="changeKeyBtn" class="link-btn strong">Change key</button>
+    </div>
+    <form id="keyForm" class="key-form">
+      <label for="keyInput">Paste your JSearch key here</label>
+      <div class="input-row">
+        <input id="keyInput" type="password" autocomplete="off" spellcheck="false" placeholder="Paste key…" required>
+        <button type="submit" class="btn-primary">Save</button>
+      </div>
+      <p id="keyMsg" class="form-msg"></p>
+    </form>
+    <div class="help-box">
+      <b>Where do I find it?</b>
+      <ol>
+        <li>Go to <a href="https://rapidapi.com" target="_blank" rel="noopener">rapidapi.com</a> and sign in (it's free).</li>
+        <li>Search for <b>JSearch</b> and open it.</li>
+        <li>Click <b>Pricing</b> and subscribe to the free <b>Basic</b> plan.</li>
+        <li>Go back, open the <b>Headers</b> tab, and copy the value next to <b>X-RapidAPI-Key</b>.</li>
+      </ol>
+    </div>
+  </dialog>
+
+  <!-- Companies -->
+  <dialog id="companiesDialog">
+    <form method="dialog" class="dialog-close"><button aria-label="Close">×</button></form>
+    <h3>🏢 Companies I check</h3>
+    <p class="subline">Job Finder checks these companies' own job boards directly. Paste a company name or a link to its careers page to add one.</p>
+    <form id="addCompanyForm" class="input-row">
+      <input id="companyInput" placeholder="e.g. cloudflare or jobs.lever.co/palantir" autocomplete="off" required>
+      <button type="submit" class="btn-primary">Add</button>
+    </form>
+    <p id="companyMsg" class="form-msg"></p>
+    <ul id="companyList" class="company-list"></ul>
+  </dialog>
+
+  <!-- Daily review notes -->
+  <dialog id="notesDialog">
+    <form method="dialog" class="dialog-close"><button aria-label="Close">×</button></form>
+    <h3>📝 Daily review notes</h3>
+    <p class="subline">Each evening at 6 PM, Claude looks at the links you marked "Link didn't work" and fixes what it safely can. Here's what changed.</p>
+    <div id="notesBody" class="notes-body"></div>
+  </dialog>
+
+  <div id="closedScreen" class="closed-screen" hidden>
+    <div class="closed-card">
+      <span class="logo big"></span>
+      <h2>Job Finder is closed</h2>
+      <p>Your saved jobs are safe. You can close this tab now.</p>
+      <p class="subline">To open it again, double-click <b>Job Finder</b> in your Job Website folder.</p>
+    </div>
+  </div>
+
+  <div id="toast" class="toast" hidden></div>
+  <script src="/static/app.js"></script>
+</body>
+</html>
